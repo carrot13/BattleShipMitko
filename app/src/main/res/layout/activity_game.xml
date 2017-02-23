@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:columnCount="8"
+    android:rowCount="8"
+    tools:context="com.example.android.battleshipmitko.GameActivity">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b00"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:tag="00"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b01"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:tag="01"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b02"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:tag="02"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b03"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:tag="03"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b04"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:tag="04"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b05"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:tag="05"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b06"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:tag="06"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b10"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:tag="10"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b11"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:tag="11"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b12"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:tag="12"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b13"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:tag="13"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b14"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:tag="14"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b15"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:tag="15"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b16"
+        android:layout_column="1"
+        android:layout_row="6"
+        android:tag="16"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b17"
+        android:layout_column="1"
+        android:layout_row="7"
+        android:tag="17"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b21"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:tag="21"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b22"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:tag="22"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b23"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:tag="23"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b24"
+        android:layout_column="2"
+        android:layout_row="4"
+        android:tag="24"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b25"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:tag="25"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b26"
+        android:layout_column="2"
+        android:layout_row="6"
+        android:tag="26"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b27"
+        android:layout_column="2"
+        android:layout_row="7"
+        android:tag="27"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b20"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:tag="20"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b30"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:tag="30"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b31"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:tag="31"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b32"
+        android:layout_column="3"
+        android:layout_row="2"
+        android:tag="32"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b33"
+        android:layout_column="3"
+        android:layout_row="3"
+        android:tag="33"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b34"
+        android:layout_column="3"
+        android:layout_row="4"
+        android:tag="34"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b35"
+        android:layout_column="3"
+        android:layout_row="5"
+        android:tag="35"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b36"
+        android:layout_column="3"
+        android:layout_row="6"
+        android:tag="36"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b37"
+        android:layout_column="3"
+        android:layout_row="7"
+        android:tag="37"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b40"
+        android:layout_column="4"
+        android:layout_row="0"
+        android:tag="40"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b41"
+        android:layout_column="4"
+        android:layout_row="1"
+        android:tag="41"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b42"
+        android:layout_column="4"
+        android:layout_row="2"
+        android:tag="42"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b43"
+        android:layout_column="4"
+        android:layout_row="3"
+        android:tag="43"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b44"
+        android:layout_column="4"
+        android:layout_row="4"
+        android:tag="44"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b45"
+        android:layout_column="4"
+        android:layout_row="5"
+        android:tag="45"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b46"
+        android:layout_column="4"
+        android:layout_row="6"
+        android:tag="46"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b47"
+        android:layout_column="4"
+        android:layout_row="7"
+        android:tag="47"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b50"
+        android:layout_column="5"
+        android:layout_row="0"
+        android:tag="50"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b51"
+        android:layout_column="5"
+        android:layout_row="1"
+        android:tag="51"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b52"
+        android:layout_column="5"
+        android:layout_row="2"
+        android:tag="52"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b53"
+        android:layout_column="5"
+        android:layout_row="3"
+        android:tag="53"
+        tools:ignore="ContentDescription" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b54"
+        android:layout_column="5"
+        android:layout_row="4"
+        android:tag="54"
+        tools:ignore="ContentDescription" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b55"
+        android:layout_column="5"
+        android:layout_row="5"
+        android:tag="55"
+        tools:ignore="ContentDescription" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b56"
+        android:layout_column="5"
+        android:layout_row="6"
+        android:tag="56"
+        tools:ignore="ContentDescription" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b57"
+        android:layout_column="5"
+        android:layout_row="7"
+        android:tag="57"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b60"
+        android:layout_column="6"
+        android:layout_row="0"
+        android:tag="60"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b61"
+        android:layout_column="6"
+        android:layout_row="1"
+        android:tag="61"
+        android:contentDescription="" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b62"
+        android:layout_column="6"
+        android:layout_row="2"
+        android:tag="62" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b63"
+        android:layout_column="6"
+        android:layout_row="3"
+        android:tag="63" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b64"
+        android:layout_column="6"
+        android:layout_row="4"
+        android:tag="64"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b65"
+        android:layout_column="6"
+        android:layout_row="5"
+        android:tag="65"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b66"
+        android:layout_column="6"
+        android:layout_row="6"
+        android:tag="66" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b67"
+        android:layout_column="6"
+        android:layout_row="7"
+        android:tag="67" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b70"
+        android:layout_column="7"
+        android:layout_row="0"
+        android:tag="70" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b71"
+        android:layout_column="7"
+        android:layout_row="1"
+        android:tag="71" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b72"
+        android:layout_column="7"
+        android:layout_row="2"
+        android:tag="72"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b73"
+        android:layout_column="7"
+        android:layout_row="3"
+        android:tag="73" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b74"
+        android:layout_column="7"
+        android:layout_row="4"
+        android:tag="74" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b75"
+        android:layout_column="7"
+        android:layout_row="5"
+        android:tag="75" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b76"
+        android:layout_column="7"
+        android:layout_row="6"
+        android:tag="76"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b77"
+        android:layout_column="7"
+        android:layout_row="7"
+        android:tag="77"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/b07"
+        android:layout_column="0"
+        android:layout_row="7"
+        android:tag="07"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+
+</GridLayout>

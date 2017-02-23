@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Battle Ship Mitko</string>
+    <string name="battle_ship_game">BATTLE SHIP GAME</string>
+    <string name="settings">Settings</string>
+    <string name="statistics">Statistics</string>
+    <string name="ship_1_size">Ship 1 Size</string>
+    <string name="ship_2_size">Ship 2 Size</string>
+    <string name="ship_3_size">Ship 3 Size</string>
+    <string name="ship_4_size">Ship 4 Size</string>
+    <string name="ship_5_size">Ship 5 Size</string>
+    <string name="number_of_shots">Number of Shots</string>
+</resources>
